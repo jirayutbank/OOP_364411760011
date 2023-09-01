@@ -15,12 +15,15 @@ OOP Exercise Chapter 6
 """
 
 class Vehicle:
+    my_vehicle = []
+
     def __init__(self,brand,model,color,maxspeed,price):
         self.brand = brand
         self.model = model
         self.color = color
         self.maxspeed = maxspeed
         self.price = price
+        #self.my_vihecle.append(self)
 
 
     def vehicle_info(self):
@@ -30,6 +33,14 @@ class Vehicle:
               f'Maxspeed:{self.maxspeed} '
               f'Price:{self.price}')
 
+    def delete_vehicle(self,index):
+        self.my_vehicle.pop(index)
+
+    def edit_vehicle_price(self,index,new_price):
+        self.my_vehicle[index].price = new_price
+
+    def edit_vehicle_color(self,index,new_color):
+        self.my_vehicle[index].color = new_color
 
 # std = []
 # n = int(input('How many Vehicle? : '))
