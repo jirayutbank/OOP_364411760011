@@ -1,5 +1,4 @@
 from Vehicle import Vehicle
-
 def display_option():
     print("Welcome to Vehicle Data Store System (VDSS)")
     print("1.Add Vehicle")
