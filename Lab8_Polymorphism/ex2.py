@@ -33,7 +33,7 @@ class Student():
               f'Major: {self.major}'
               f'University: {self.university}')
 
-p1 = person()
+p1 = Person
 p1.name = "Jirayut Jeebjong"
 p1.age = 21
 p1.gender = "Male"
